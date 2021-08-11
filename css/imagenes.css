@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+}
+.img_principal {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img_catalogo {
+    display: inline;
+    margin: -.8em 1.7em;
+}
+p{
+    font-size: 1.6em;
+    text-align: center;
+    line-height: 0;
+}
+.contenedor_catalogo {
+    display: block;
+    margin: 0 auto;
+    width: 1300px;
+
+}
+.content-indiv {
+    display: inline-block;
+    margin-bottom: 3em;
+}

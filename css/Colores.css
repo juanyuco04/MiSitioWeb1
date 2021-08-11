@@ -1,0 +1,20 @@
+h1{
+    font-size: 60px;
+}
+h2{
+    font-size: 60px;
+}
+p{
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.color-rojo {
+    color: red;
+}
+.color-verde {
+    color: rgb(0, 225, 0)
+}
+.color-gris {
+    color: #646464;
+}
