@@ -1,0 +1,56 @@
+h1{
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    position: fixed;
+    height: 100%;
+    width: 270px;
+    top: 0;
+    border-right: 1px solid rgb(48, 48, 48, .9);
+    background-color: rgb(97, 97, 93, .1);
+}
+ul {
+    list-style: none;
+    position: absolute;
+    top: 60px;
+    left: 15px;
+    width: 90%;
+}
+a{
+    text-decoration: none;
+    color: rgb(64, 64, 64);
+    font-size: 1.1em;
+    display: block;
+    border-radius: 5px;
+    padding: 13px 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+a:hover{
+    background: rgb(70, 68, 68, .4)
+}
+.main-contem {
+    margin: 40px 40px 40px 300px;
+    text-align: justify;
+}
+.fas, .fab {
+    width: 30px;
+    font-size: 1em;
+}
+p{
+    font-size: 20px;
+    line-height: 1.2em;
+}
+i {
+    padding-right: 10px;
+}
+.linea-item {
+    border-top: 1.2px solid rgb(48, 48, 48, .9);
+    border-radius: 0;
+}
