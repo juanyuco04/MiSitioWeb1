@@ -87,7 +87,7 @@ header nav {
     position: fixed;
     height: calc(100% - 80px);
     background: cyan;
-    left: -20%;
+    left: 0%;
     overflow: scroll;
     right: 100%;
 }
