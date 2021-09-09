@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: cornsilk;
+}
+.menu-bar {
+    display: block;
+}
+header {
+    width: 100%;
+}
+header nav {
+    background: cyan;
+    width: 100%;
+}
+nav ul {
+    list-style: none;
+    text-align: right;
+}
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+nav ul li:hover {
+    background: rgb(248, 41, 4);
+}
+nav ul li a {
+    display: block;
+    color: rgb(75, 72, 72);
+    padding: 15px;
+    text-decoration: none;
+}
+nav ul li .childrem {
+    display: none;
+    position: absolute;
+    background: rgb(94, 90, 94);
+    text-align: left;
+}
+nav ul li:hover .childrem {
+    display: block;
+    text-align: left;
+}
+nav ul li .childrem li {
+    overflow: hidden;
+    display: block;
+    border-bottom: 1px solid rgba(87, 88, 86, 0.9);
+}
+nav ul li .childrem li a {
+    display: block;
+}
+nav ul li span {
+    margin-right: 15px;
+}
+nav ul li .icon-chevron-down {
+    position: relative;
+    top: 3px;
+    margin-left: 10px;
+}
+@media only screen and (max-width: 860px) { 
+body {
+    padding-top: 60px;
+}
+.menu-bar {
+    display: block;
+    position: fixed;
+    width: 100%;
+    background:gray;
+    top: 0;
+}
+.bt-menu {
+    display: block;
+    padding: 11px;
+    color: rgb(214, 218, 214);
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    overflow: hidden;
+}
+.menu-bar span {
+    float: right;
+    font-size: 40px;
+}
+header nav {
+    width: 80%;
+    position: fixed;
+    height: calc(100% - 80px);
+    background: cyan;
+    left: -20%;
+    overflow: scroll;
+    right: 100%;
+}
+header nav ul {
+    text-align: center;
+}
+header nav ul li {
+    display: block;
+    border-bottom: 1px solid rgba(97, 96, 96, 0.9);
+}
+header nav ul li a {
+    display: block;
+}
+header nav ul li .childrem {
+   position: relative;
+   width: 100%;
+}
+header nav ul li .childrem li a {
+    text-align: center;
+    padding-left: -10px;
+    background-color: darkblue;
+}
+nav ul li .icon-chevron-down {
+    float: right;
+}
+nav ul li:hover .childrem {
+    display: none;
+}
