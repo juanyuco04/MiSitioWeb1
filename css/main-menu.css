@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background: rgb(35, 4, 85)
+}
+ul {
+    list-style: none;
+    font-family: 'Padauk', sans-serif ;
+    font-size: 13px;
+}
+li {
+    display: inline-block;
+    padding: 1em;
+}
+a {
+    text-decoration: none;
+    color:silver
+}
+.main-content {
+    margin: 4em 3em ;
+}
+li:hover {
+    background: rgb(138, 138, 163);
+}
