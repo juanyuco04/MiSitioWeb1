@@ -1,0 +1,17 @@
+h1{
+    font-size: 30px;
+}
+.li-oli {
+    display: block;
+    padding: 0.3em;
+    margin-left: 20px;
+}
+.li-uli {
+    display: block;
+    padding: 0.3em;
+    margin-left: 20px;
+}
+.lis {
+    background: rgb(235, 233, 236);
+    
+}

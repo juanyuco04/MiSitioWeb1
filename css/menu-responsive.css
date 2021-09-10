@@ -15,6 +15,13 @@ header nav {
     background: cyan;
     width: 100%;
 }
+.sub-li {
+    display: block;
+    padding: 0.5em;
+}
+.sub-li:hover {
+    background:  rgb(248, 41, 4); ;
+}
 nav ul {
     list-style: none;
     text-align: right;
