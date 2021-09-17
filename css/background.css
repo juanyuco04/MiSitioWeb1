@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.man {
+    background-image: url("../img/moto_bg.jpg");
+    background-repeat: repeat-x;
+    background-size: cover;
+    padding: 500px;
+    margin: 10px;
+
+}
+body {
+    background-image: url("../img/ciudad_1_bg.jpg");
+    background-repeat: repeat-x;
+    background-size: 80%;
+    padding: 0px;
+    margin: 100px;
+}
+@media only screen and (max-width:680px) {
+    body {
+        background-image: url("../img/ciudad_2_bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+@media only screen and (max-width:650px) {
+    body {
+        background-image: url("../img/ciudad_3_bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
