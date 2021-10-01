@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("../img/fon2_tecn.jpg");
+    background-attachment: cover;
+    height: 100vh;
+
+}
+.main-content {
+    background-color: rgb(8, 8, 8);
+    width: 320px;
+    height: 450px;
+    color: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+h1 {
+    margin: 0 ;
+    padding: 0 0 15px;
+    text-align: center;
+    font-size: 22px;
+}
+label {
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-weight: bold;
+}
+input {
+    width: 100%;
+    margin-bottom: 15px;
+}
+input[type="text"], input[type="Password"] {
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 35px;
+    color: whitesmoke;
+    font-size: 14px;
+}
+input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 35px;
+    background-color: rgb(9, 48, 223);
+    font-size: 16px;
+    border-radius: 18px;
+}
+input[type="submit1"] {
+    border: none;
+    outline: none;
+    display: block;
+    width: 30%;
+    height: 30px;
+    background-color: rgb(62, 145, 253);
+    font-size: 14px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-left: 35%;
+    text-align: center;
+    cursor: pointer;
+}
+input[type="submit"], input[type="submit1"] :hover {
+    cursor: pointer;
+    color: white;
+}
+a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 15px;
+    color:rgb(185, 162, 185)
+}
+li {
+    list-style: none;
+}
+.a1 {
+    text-align: center;
+    margin-left: 35px;
+    padding: 20px;
+}
+a:hover {
+    color: white;
+}
