@@ -5,6 +5,7 @@
 body {
     background-image: url("../img/fon2_tecn.jpg");
     background-attachment: cover;
+    background-repeat: no-repeat;
     height: 100vh;
 
 }
