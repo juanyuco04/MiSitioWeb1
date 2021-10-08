@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content-main {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template: "header       nav         nav "       100px
+                   "section      section     section"    350px
+                   "article-1    article-2   article-3"  auto
+                   "article-4    article-5   article-6"  auto
+                ;
+    gap: 20px;
+
+
+}
+header, nav, section, img-
+header {
+    background: chartreuse;
+    grid-area: header;
+}
+nav {
+    background: cyan;
+    grid-area: nav ;
+}
+section {
+    background: darkorange;
+    grid-area: section;
+}
+.article-1{
+    grid-area: article-1;
+}
+.article-2{
+    grid-area: article-2;
+}
+.article-3{
+    grid-area: article-3;
+}
+.article-4{
+    grid-area: article-4;
+}
+.article-5{
+    grid-area: article-5;
+}
+.article-6{
+    grid-area: article-6;
+}

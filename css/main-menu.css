@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+.menu-bar {
+    padding: 20px;
+}
 .content-main {
 
     margin-bottom: 100px;
@@ -40,8 +43,9 @@ li {
     padding: 20px;
 }
 a {
+    text-align: right;
     text-decoration: none;
-    color:rgb(37, 35, 35)
+    color:rgb(112, 109, 109)
 }
 .main-content {
     margin-left: 250px;
@@ -51,4 +55,7 @@ li:hover {
     background: rgb(183, 183, 202);
     color: white;
     
+}
+a:hover {
+    color: rgb(19, 22, 22);
 }
