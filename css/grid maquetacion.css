@@ -12,12 +12,18 @@
                    "section      section     section"    350px
                    "article-1    article-2   article-3"  auto
                    "article-4    article-5   article-6"  auto
-                ;
+                    ;
     gap: 20px;
 
 
 }
-header, nav, section, img-
+header, nav, section, .img-article {
+    display: flex;
+    border-radius: 20px;
+    font-size: 1.5em;
+    align-items: center;
+    justify-content: center;
+}
 header {
     background: chartreuse;
     grid-area: header;
@@ -29,6 +35,25 @@ nav {
 section {
     background: darkorange;
     grid-area: section;
+}
+article {
+    max-width: 400px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.img-article {
+    background-color: rgb(85, 34, 85);
+    height: 300px;
+    width: 400px;
+}
+.titulo-articulo {
+   
+    margin-top: 20px;
+    font-size: 22px;
+}
+.font-article {
+    font-size: 17px;
+    text-align: justify;
 }
 .article-1{
     grid-area: article-1;
@@ -47,4 +72,38 @@ section {
 }
 .article-6{
     grid-area: article-6;
+}
+@media only screen and (max-width: 860px) {
+    .content-main {
+        width: 90%;
+        max-width: 1300px;
+        margin: 0 auto;
+        display: grid;
+        grid-template: "header       nav"        100px
+                       "section      section"    350px
+                       "article-1    article-2"  auto
+                       "article-3    article-4"  auto
+                       "article-5    article-6"  auto
+                        ;
+        gap: 20px;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .content-main {
+        width: 90%;
+        max-width: 1300px;
+        margin: 0 auto;
+        display: grid;
+        grid-template: "header"        100px
+                        "nav"          100px
+                       "section"       350px
+                       "article-1"     auto
+                       "article-2"     auto
+                       "article-3"     auto
+                       "article-4"     auto
+                       "article-5"     auto
+                       "article-6"     auto
+                        ;
+        gap: 20px;
+    }
 }

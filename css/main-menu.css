@@ -3,7 +3,10 @@
     padding: 0;
 }
 .menu-bar {
+    display: block;
     padding: 20px;
+   
+
 }
 .content-main {
 
@@ -17,7 +20,6 @@
     position: fixed;
     top: 0;
     width: 180px;
-    padding-left: 20px;
     height: 100%;
 
 }
@@ -32,10 +34,10 @@ ul {
     flex-direction: column;
     text-align: left;
     width: 200px;
-    height: 100%;
     list-style: none;
     font-family: 'Padauk', sans-serif ;
     font-size: 12px;
+    height: 100%;
     overflow-y: scroll;
 }
 li {
@@ -55,6 +57,9 @@ li:hover {
     background: rgb(183, 183, 202);
     color: white;
     
+}
+.menu-bar:hover {
+    background-color: white;
 }
 a:hover {
     color: rgb(19, 22, 22);
