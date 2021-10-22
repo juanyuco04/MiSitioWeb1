@@ -5,7 +5,7 @@
 }
 .content-main {
     width: 90%;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template: "header       nav         nav "       100px
@@ -37,14 +37,14 @@ section {
     grid-area: section;
 }
 article {
-    max-width: 400px;
+    max-width: 380px;
     margin-left: 20px;
     margin-right: 20px;
 }
 .img-article {
     background-color: rgb(85, 34, 85);
     height: 300px;
-    width: 400px;
+    width: 380px;
 }
 .titulo-articulo {
    
