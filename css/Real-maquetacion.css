@@ -3,9 +3,114 @@
     padding: 0px;
 }  
 .main-conter {
-    width: 90%;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1250px;
     margin: 0 auto;
     display: grid;
- 
+    gap: 20px;
+    grid-template: "header      nav        nav"        140px
+                   "section     section    section"     750px
+                   "article-1   article-2  article-3"    auto
+                   "article-4   article-5  article-6"    auto;  
 }
+body {
+    background-color: rgb(241, 242, 245);
+}
+.div-logo {
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+    margin-left: 140px;
+}
+.logo {
+    width: 120px;
+    height: 120px;
+}
+li:hover {
+    background-color: rgb(182, 182, 184);
+}
+a:hover {
+    color: black;
+}
+li {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    margin-top: 45px;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+    color: rgb(95, 93, 93);
+    font-size: 1.1em;
+}
+.conten-linea {
+    border: 1px solid red;
+    margin-top: 30px;
+    margin-left: 317px;
+    width: 50%;
+}
+.img-article {
+    border: 1px solid red;
+    margin-top: 20px;
+    width: 40px;
+
+}
+
+.titulo-articulo {
+    margin-top: 5px;
+    font-size: 22px;
+}
+.font-article {
+    font-size: 17px;
+    text-align: justify;
+}
+header {
+    grid-area: header;
+}
+nav {
+    grid-area: nav;
+}
+section {
+    grid-area: section;
+}
+article {
+    max-width: 400px;
+}
+.article-1 {
+    grid-area: article-1;
+}
+.article-2 {
+    grid-area: article-2;
+}
+.article-3 {
+    grid-area: article-3;
+}
+.article-4 {
+    grid-area: article-4;
+}
+.article-5 {
+    grid-area: article-5;
+}
+.article-6 {
+    grid-area: article-6;
+}
+@media only screen and (max-width: 860px) {
+    .main-conter {
+        width: 90%;
+        max-width: 900px;
+        margin: 0 auto;
+        display: grid;
+        grid-template: "header       nav"        140px
+                       "section      section"    750px
+                       "article-1    article-2"  auto
+                       "article-3    article-4"  auto
+                       "article-5    article-6"  auto
+                        ;
+        gap: 20px;
+    }
+    
+
+}
+
