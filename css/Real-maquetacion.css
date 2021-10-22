@@ -7,24 +7,6 @@
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    gap: 20px;
+   
  
-}
-.article-1{
-    grid-area: article-1;
-}
-.article-2{
-    grid-area: article-2;
-}
-.article-3{
-    grid-area: article-3;
-}
-.article-4{
-    grid-area: article-4;
-}
-.article-5{
-    grid-area: article-5;
-}
-.article-6{
-    grid-area: article-6;
 }
