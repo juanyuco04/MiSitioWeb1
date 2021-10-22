@@ -9,7 +9,7 @@
     display: grid;
     gap: 20px;
     grid-template: "header      nav        nav"        140px
-                   "section     section    section"     750px
+                   "section     section    section"     715px
                    "article-1   article-2  article-3"    auto
                    "article-4   article-5  article-6"    auto;  
 }
