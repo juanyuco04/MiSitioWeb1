@@ -1,0 +1,29 @@
+.box-1 {
+    margin-top: 20px;
+    background-color: aqua;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: .1em;
+    height:40px;
+    margin-bottom: 20px;
+}
+h2 { 
+    margin-left: 50px;
+    font-size: 40px;
+    padding: 20px;
+}
+.grillas {
+    margin-bottom: 30px;
+}
+.row>[class^="co-"] {
+    border: 1px solid black;
+}
+.row {
+    margin-bottom: 30px;
+}
+.col {
+    border: 1px solid black;
+}
+.point-monitor {
+    cursor: pointer;
+}

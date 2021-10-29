@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/boostrap-elemtos.css">
+    <title>boostrap-elementos</title>
+</head>
+<body>
+    <h1>hola, como estamos</h1>
+    <h2>Contenedores en boostrap</h2>
+    <div class="box-1 container">Este es un contenedor con Boostrap con class container</div>
+    <div class="box-1 container-sm">Este es un contenedor con Boostrap con class container</div>
+    <div class="box-1 container-md">Este es un contenedor con Boostrap con class container</div>
+    <div class="box-1 container-lg">Este es un contenedor con Boostrap con class container</div>
+    <div class="box-1 container-xl">Este es un contenedor con Boostrap con class container</div>
+    <div class="box-1 container-xxl">Este es un contenedor con Boostrap con class container</div>
+    <div class="box-1 container-flud">Este es un contenedor con Boostrap con class container</div>
+    <!-- div.clasepunto*7{hfjf} -->
+    <h2>Grillas</h2>
+    <div class="grillas container-fluid">
+        <div class="row">
+          <div class="col-8">
+            Column 1
+          </div>
+          <div class="col-2">
+            Column 3
+          </div>
+          <div class="col-2">
+            Column 2
+          </div>
+        </div>
+      </div>
+ <h2>columnas</h2>
+    <div class=" column container">
+        <div class="row align-items-start">
+          <div class="col">column 1</div>
+          <div class="col">column 2</div>
+          <div class="col">column 3</div>
+          <div class="col">column 4</div>
+          <div class="col">column 5</div>
+          <div class="col">column 6</div>
+          <div class="col">column 7</div>
+          <div class="col">column 8</div>
+          <div class="col">column 9</div>
+          <div class="col">column 10</div>
+          <div class="col">column 11</div>
+          <div class="col">column 12</div>
+        </div>
+        <h2>Radios</h2>
+    <label>Seleccione el lenguaje de programacion que mas utiliza</label>
+    <div class="form-check">
+        <input class="form-check-input point-monitor" type="radio" name="flexRadioDefault" id="radioJavaScript" checked>
+        <label class="form-check-label point-monitor" for="radioJavaScript">JavaScript</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input point-monitor" type="radio" name="flexRadioDefault" id="radiosPhp" checked>
+        <label class="form-check-label point-monitor" for="radiosPhp">Php</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input point-monitor" type="radio" name="flexRadioDefault" id="radioPayton" checked>
+        <label class="form-check-label point-monitor" for="radioPayton">Payton</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input point-monitor" type="radio" name="flexRadioDefault" id="radioC#" checked>
+        <label class="form-check-label point-monitor" for="radioC#">C#</label>
+      </div>
+     <div class="container stile-container">
+       <h2>select</h2>
+       <label> Selecione el municipio de residencia </label>
+    <select class="form-select" aria-label="Default select example">
+       <option selected>Pitalito</option>
+       <option value="1">Acevedo</option>
+       <option value="2">Guadalupe</option>
+       <option value="3">Timana</option>
+       <option value="3">Tarqui</option>
+    </select>
+    <h2>Floating labels</h2>
+    <div class="row">
+    <div class="form-floating mb-3 col-6">
+        <input type="email" class="form-control" id="floatingInput" placeholder="Ingrese el primer nombre">
+        <label for="floatingInput">Ingrese el primer nombre</label>
+      </div>
+      <div class="form-floating mb-3 col-6">
+        <input type="email" class="form-control" id="floatingInput" placeholder="Ingrese el segundo nombre">
+        <label for="floatingInput">Ingrese el segundo nombre</label>
+      </div>
+      <div class="form-floating mb-3 col-6">
+        <input type="email" class="form-control" id="floatingInput" placeholder="Ingrese el primer Apellido">
+        <label for="floatingInput">Ingrese el primer Apellido</label>
+      </div>
+      <div class="form-floating mb-3 col-6">
+        <input type="email" class="form-control" id="floatingInput" placeholder="Ingrese el segundo Apellido">
+        <label for="floatingInput">Ingrese el  segundo Apellido</label>
+      </div>
+    </div>
+</div>
+<div></div>
+<h2>validacion</h2>
+<form class="row g-3 needs-validation" novalidate>
+    <div class="col-md-4">
+      <label for="validationCustom01" class="form-label">Primer Nombre</label>
+      <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+      <div class="valid-feedback">
+      Excelente!
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustom02" class="form-label">Segundo Nombre</label>
+      <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+      <div class="valid-feedback">
+       Excelente!
+      </div>
+      <div class="invalid-feedback">
+        Ciudad no validad.
+       </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustomUsername" class="form-label">Username</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text" id="inputGroupPrepend">@</span>
+        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+        <div class="invalid-feedback">
+          Use otro usuario.
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="validationCustom03" class="form-label">Ciudad</label>
+      <input type="text" class="form-control" id="validationCustom03" required>
+      <div class="invalid-feedback">
+       Ciudad no validad.
+      </div>
+    </div>
+    <div class="col-md-3">
+      <label for="validationCustom04" class="form-label">Rol</label>
+      <select class="form-select" id="validationCustom04" required>
+        <option selected disabled value="">Define el tuyo...</option>
+        <option>Aprendiz</option>
+        <option>Instrutor</option>
+        <option>Otro</option>
+      </select>
+      <div class="invalid-feedback">
+       usuario no conincide 
+      </div>
+    </div>
+    <div class="col-md-3">
+      <label for="validationCustom05" class="form-label">ID ficha</label>
+      <input type="text" class="form-control" id="validationCustom05" required>
+      <div class="invalid-feedback">
+        Ficha no validad.
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label" for="invalidCheck">
+        Acepto los terminos y condiciones 
+        </label>
+        <div class="invalid-feedback">
+          Pues si no acepta salado ):
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Submit form</button>
+    </div>
+  </form>
+  <div class="Arcodeon">
+      <h2>Arcordion</h2>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <script src="js/valivation-boostrap.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+</html>
