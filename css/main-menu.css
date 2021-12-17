@@ -64,3 +64,9 @@ li:hover {
 a:hover {
     color: rgb(19, 22, 22);
 }
+.contenedor {
+    margin-left: 200px;
+    width: auto;
+    height: 800px;
+    background-color: aquamarine;
+}
