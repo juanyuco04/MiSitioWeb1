@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/47910d8a72.js" crossorigin="anonymous"></script>
+    <script src="js/4_Ejer_Pagina_Javascript.js"></script>
+    <link rel="stylesheet" href="css/4_Ejer_Pagina_Javasript.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <h1 class="logo">NETFLIX</h1>
+                <nav>
+                    <a class="activo" href="#">Inicio</a>
+                    <a href="#">TV Short</a>
+                    <a href="#">Movies</a>
+                    <a href="#">New & Popular</a>
+                    <a href="#">My list</a>
+                </nav>
+         </div>
+    </header>
+
+
+    <main>
+        <div id="imagen_Principal" class="pelicula-principal">
+            <div class="contenedor"> 
+                <h3 id="titulo" class="titulo">Oscuro deseo</h3>
+                <p id="parrafo" class="descripcion">Alma, una mujer casada, vive una escapada de fin de semana que enciende una pasión, desencadena una desgracia y la hace dudar de su círculo más íntimo.</p>
+                <button role="button" class="boton"><i class="fa-regular fa-circle-play"></i>Reproducir</button>
+                <button role="button" class="boton"><i class="fa-solid fa-info"></i>Mas informacion</button>
+            </div>
+        </div>
+
+
+    <div class="peliculas-recomendadas contenedor"> 
+        <div class="contenedor-titulo-controles">
+            <h3>Pelicula Recomendada</h3>
+            <div class="indicadores"></div>
+        </div>
+
+        <div class="contenedor-principal">
+            <button  id="flecha_izquierda" role="button" class="flecha-izquierda"><i class="fa-solid fa-angle-left"></i></button>
+           
+            <div class="contenedor-coursel">
+                <div class="pelicula">
+                    <img  src="img/Interstellar.jpg" onclick="cambiarImagen('')"  alt=""> 
+                    <img  src="img/Alerta_Roja.jpg" onclick="cambiarImagen2('')" alt=""> 
+                    <img  src="img/Las_Aventuras1.jpg" onclick="cambiarImagen3('')" alt=""> 
+                    <img  src="img/Peaky1.jpg" onclick="cambiarImagen4('')" alt=""> 
+                    <img  src="img/scream1.jpg" onclick="cambiarImagen5('')" alt=""> 
+                    <img  src="img/IMG_6.jpg" onclick="cambiarImagen3('')" alt=""> 
+                    <img  src="img/IMG_6.jpg" onclick="cambiarImagen('')" alt=""> 
+                    <img  src="img/IMG_6.jpg" onclick="cambiarImagen2('')" alt=""> 
+                    <img  src="img/IMG_6.jpg" onclick="cambiarImagen('')" alt=""> 
+                    <img  src="img/IMG_6.jpg" onclick="cambiarImagen('')" alt=""> 
+                </div>
+            </div>
+           
+
+            <button  id="flecha_derecha" role="button" class="flecha-derecha" onclick="fechaDerecha();"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+    </div>   
+    </main>
+</body>
+</html>

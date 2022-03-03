@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.titulo {
+    margin: 13px 10px;
+}
+.contenedor_principal {
+    width: 450px;
+    height: 500px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, .9);
+}
+
+.cantidad_producto {
+    width: 420px;
+    height: 35px;
+    border-radius: 20px;
+    background: rgb(227, 252, 4);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+
+}
+.cantidad_producto:hover {
+    background-color: rgb(207, 228, 24);
+    cursor: pointer;
+    transform: all 0.8s;
+}
+.cantidad_producto h2 {
+    align-self: center;
+}
+.contenedor_Producto {
+    display: flex;
+    
+}
+.cartulina {
+    margin: 10px;
+    background-image: url(../img/Zapatilla_kelme.jpg);
+    width: 220px;
+    height: 265px;
+    background-size: 220px;
+    background-repeat: no-repeat;
+}
+
+.descripcion_Producto {
+    margin-top: 10px;
+    width: 200px;
+    padding: 10px;
+    height: 230px;
+}
+.descripcion_Producto h2 {
+    margin-top: 15px;
+}
+.aumento_cant_producto {
+    
+    display: flex;
+    width: 180px;
+    height: 38px;
+    border-radius: 10px;
+    justify-content: center;
+    margin-left: 12px;
+}
+.parte_Inferior{
+    display: flex;
+    width: 90%;
+    margin: 0px auto 15px auto;
+}
+.suma {
+    height: 38px;
+    width: 100%;
+    border-radius: 0px 10px 10px 0px;
+    
+}
+.resta {
+    height: 38px;
+    width: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+.aumento_producto {
+    width: 60px;
+    height: 34px;
+    border: 1px 1px  1px 1px solid black;
+    text-align: center;
+    font-size: 1.2em;
+}
+.eliminarr_compra{
+    display: flex;
+    height: 38px;
+    width: 180px;
+    border: 1px solid black;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+.eliminarr_compra h2{
+    text-align: center;
+    margin: auto;
+  
+}
+.guardar_compra {
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 36px;
+    width: 90%;
+    display: flex;
+    margin: auto;
+
+}
+.guardar_compra h2 {
+    text-align: center;
+    margin: auto;
+}
