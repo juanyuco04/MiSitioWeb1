@@ -1,7 +1,7 @@
 "use-strict"
  
 let cantidadProducto 
-let sumarProducto = 1;
+let sumarProducto = "";
 let restarProductos = "";
 let totalProductos = 226000;
 let cantidadYaProducto
@@ -22,13 +22,14 @@ function funSumarProducto (){
 }
 function funRestarProducto (){
     if (restarProductos > 1){
-       document.getElementById("cantidad_producto").value = --restarProductos;
+    sumarPro = document.getElementById("cantidad_producto").value = --restarProductos;
+    restarProductos.innerHTML 
 
        cantidadProducto = document.getElementById("can_Productos");
        cantidadProducto.innerHTML = restarProductos;
 
        cantidadYaProducto = document.getElementById("costo_producto");
-        cantidadYaProducto.innerHTML = restarProductos * totalProductos ;
+        cantidadYaProducto.innerHTML = sumarPro * totalProductos ;
     }
     
 }
