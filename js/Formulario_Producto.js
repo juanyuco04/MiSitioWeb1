@@ -1,5 +1,8 @@
+
+let nodoTabla = "";
+
 function  crearTabla () {
-    let nodoTabla = document.createElement("table");
+    nodoTabla = document.createElement("table");
     let contenedor = document.getElementById("tabla_js");
     contenedor.appendChild(nodoTabla);
 
@@ -31,31 +34,54 @@ function  crearTabla () {
     nodoTabla.setAttribute("id", "tabla-resultado");
 }
 
-function cargarProducto (){
+function validarTabla (){
     if(!document.getElementById("tabla-resultado"))
-    crearTabla()
-else(
-    alert("La tabla ya se ejecuto")
-)
+        crearTabla()
+   
 }
+ function cargarProducto (){
+      
+    validarTabla();
 
+    let codigoProducto = document.getElementById("codigo").value;
+    let codigoProductonodo = document.createTextNode(codigoProducto);
 
-/* function cargarProducto (){
+    let descripcionProducto = document.getElementById("descripcion").value;
+    let descripcionProductoNodo = document.createTextNode(descripcionProducto);
 
-    validartabla();
+    let valorUnitario =  document.getElementById("valorUnitario").value;
+    let valorUnitarioNodo = document.createTextNode(valorUnitario);
+
+    let productoDisponible = document.getElementById("Stock").value;
+    let productoDisponibleNodo = document.createTextNode(productoDisponible);
     
-    let inputCodigo = document.getElementById("codigo").value;
-    let inputCodigoNodo = document.createTextNode(inputCodigo)
 
-    
+    cargarInfTabla(codigoProductonodo, descripcionProductoNodo, valorUnitarioNodo, productoDisponibleNodo);
+
+ }
+
+
+function cargarInfTabla (codigo, descripcion, valor, Stock){
+    let codigoFilaProducto =  document.createElement("tr");
+    nodoTabla.appendChild(codigoFilaProducto);
+
+    let productoTDCodigo = document.createElement("td");
+    codigoFilaProducto.appendChild(productoTDCodigo);
+    productoTDCodigo.appendChild(codigo);
+
+    let productoTDDescripcion = document.createElement("td");
+    codigoFilaProducto.appendChild(productoTDDescripcion);
+    productoTDDescripcion.appendChild(descripcion);
+
+    let productoTDValorUnitario = document.createElement("td");
+    codigoFilaProducto.appendChild(productoTDValorUnitario);
+    productoTDValorUnitario.appendChild(valor);
+
+    let valorTDUnitario = document.createElement("td");
+    codigoFilaProducto.appendChild(valorTDUnitario);
+    valorTDUnitario.appendChild(Stock);
+
+  
+
 
 }
-
-function cargarInfTabla (codigo){
-    let nodoproducto = document.createElement("tr");
-    nodoTabla.appendChild(nodoproducto);
-
-    let nodoCodigoTD = document.createElement("td")
-    nodoproducto.appendChild(nodoCodigoTD);
-    nodoproducto.appendChild(codigo);
-} */
