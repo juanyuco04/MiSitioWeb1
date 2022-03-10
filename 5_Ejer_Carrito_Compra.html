@@ -9,13 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="js/5_Ejer_Carrito_compra.js"></script>
     <title>Document</title>
+
 </head>
 <body>
+    <a href="javascript:location.reload()"></a>
     <div class="contenedor_principal">
         <div class="parte_superior">
-            <h2 class="titulo">Subtotal COP <label id="costo_producto">226000</label> </h2>
+            <h2 class="titulo">Subtotal COP <label id="costo_producto">0</label> </h2>
             <div class="cantidad_producto">
-                <h2>Proceder al pago (<span id="can_Productos">1</span> Productos)</h2>
+                <h2>Proceder al pago (<label id="can_Productos">0</label> Productos)</h2>
             </div>
         </div>
         <div class="contenedor_Producto">
@@ -28,12 +30,12 @@
         </div>
         <div class="parte_Inferior">
             <div class="aumento_cant_producto">
-                <button role="button" id="resta" class="resta" onclick="funRestarProducto();"><i class="fa-solid fa-angle-left"></i></button>
-                <input readonly class="aumento_producto" id="cantidad_producto" type="text" value="1">
-                <button role="button" id="suma" class="suma" onclick="funSumarProducto();"><i class="fa-solid fa-angle-right"></i></button>
+                <button role="button" id="resta" class="resta" onclick="disminuirCantProducto();"><i class="fa-solid fa-angle-left"></i></button>
+                <input readonly class="aumento_producto" id="cantidad_producto" type="text" value="0">
+                <button role="button" id="suma" class="suma" onclick="aumentarCantProducto();"><i class="fa-solid fa-angle-right"></i></button>
             </div>
-            <div class="eliminarr_compra">
-                <h2>Elimminar</h2>
+            <div id="Eliminar" onclick="location.reload()" value="Actualizar" class="eliminarr_compra">
+                <h2>Eliminar</h2>
             </div> 
         </div>
           
@@ -45,3 +47,9 @@
     </div>
 </body>
 </html>
+
+
+
+
+
+
