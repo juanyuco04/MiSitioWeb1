@@ -57,6 +57,7 @@ function validarTabla (){
     
 
     cargarInfTabla(codigoProductonodo, descripcionProductoNodo, valorUnitarioNodo, productoDisponibleNodo);
+    
 
  }
 
@@ -82,6 +83,5 @@ function cargarInfTabla (codigo, descripcion, valor, Stock){
     valorTDUnitario.appendChild(Stock);
 
   
-
-
 }
+
