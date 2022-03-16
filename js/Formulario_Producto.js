@@ -39,7 +39,7 @@ function validarTabla (){
         crearTabla()
    
 }
- function cargarProducto (){
+ function cargarProducto(){
       
     validarTabla();
 
@@ -57,6 +57,7 @@ function validarTabla (){
     
 
     cargarInfTabla(codigoProductonodo, descripcionProductoNodo, valorUnitarioNodo, productoDisponibleNodo);
+    limpiarFormulario ()
     
 
  }
@@ -83,5 +84,24 @@ function cargarInfTabla (codigo, descripcion, valor, Stock){
     valorTDUnitario.appendChild(Stock);
 
   
+}
+
+function limpiarFormulario(){
+    let limpierCodigo = document.getElementById("codigo").value = ""
+    document.getElementById("codigo").innerHTML = limpierCodigo
+
+    let limpierDescripcion = document.getElementById("descripcion").value = ""
+    document.getElementById("descripcion").innerHTML = limpierDescripcion
+
+    let limpierValor = document.getElementById("valorUnitario").value = ""
+    document.getElementById("valorUnitario").innerHTML = limpierValor
+
+    let limpierStock = document.getElementById("Stock").value = ""
+    document.getElementById("Stock").innerHTML = limpierStock
+
+    alert("hola")
+
+    
+
 }
 
