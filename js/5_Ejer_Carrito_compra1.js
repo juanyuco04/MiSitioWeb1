@@ -6,6 +6,7 @@ function aumentarCantProducto (){
 
     aumentarCantProductoInput()
     costoProducto()
+    productoProductos ()
 
     let cantidad_producto = document.getElementById("can_Productos").innerHTML;
     let cantidad_productoInt = parseInt(cantidad_producto);
@@ -29,6 +30,22 @@ function aumentarCantProductoInput (){
             
 }
 
+function productoProductos(){
+    let productoProductos = document.getElementById("producto").innerHTML;
+    let cantidad_Producto = document.getElementById("cantidad_producto").value;
+
+    if (cantidad_Producto == 0  || cantidad_Producto ==1){
+        productoProductos = "Producto"
+        document.getElementById("producto").innerHTML = productoProductos
+       /*  alert("si sirve") */
+    }else{
+        productoProductos = "Productos"
+        document.getElementById("producto").innerHTML = productoProductos
+      /*   alert("no sirve") */
+
+    }
+}
+
 function costoProducto (){ 
     let cantidad_producto = document.getElementById("cantidad_producto").value;
     let subtotal = costo_producto * Number(cantidad_producto);
@@ -45,13 +62,14 @@ function disminuirCantProducto (){
 
     disminuirCantProductoInput()
     costoProducto()
+    productoProductos ()
 
     let cantidad_producto = document.getElementById("can_Productos").innerHTML;
     let cantidad_productoInt = parseInt(cantidad_producto);
      
     if (cantidad_producto > 0){
       /*   alert("restar maldito") */
-        document.getElementById("can_Productos").innerHTML = cantidad_productoInt - 1 + "s"
+        document.getElementById("can_Productos").innerHTML = cantidad_productoInt - 1 
     }
 }
 
