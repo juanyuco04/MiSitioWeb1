@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template: 
+                    "contentMenu   contentInput     contentCarro" 55px /
+                     40px              1fr              40px;
+    width: 100%;
+    background: yellow;
+    text-align: center;
+    margin: 0 auto ;
+    
+  
+}
+
+.contentMenu {
+    grid-area: contentMenu;
+    
+    text-align: center;
+    margin: auto;
+}
+.contentInput {
+    grid-area: contentInput;
+   
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+.contentCarro {
+    grid-area: contentCarro;
+    text-align: center;
+    margin: auto;
+}
+input {
+    width: 90%;
+    border-radius: 15px;
+    height: 30px;
+    border-style: none;
+    outline: none;
+    
+}
+.main-content{
+    
+    display: Grid;
+    width: 90%;
+    margin: 0 auto;
+}
+.content_producto{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:  "                          imagen_carro"      100px
+                          "marca_carro  modelo_carro imagen_carro  "    50px
+                          "precio_carro precio_carro iamgen_carro  "    30px 
+                          "                          imagen_carro "   100px /
+                            500px            1fr           1fr;
+
+    margin:  30px ;         
+    border-bottom: 1px solid ;       
+}
+.imagen_carro {
+    display: grid;
+    grid-area: imagen_carro;
+    background-size: cover;
+    width: 400px;
+
+    
+    
+}
+.marca_carro {
+    grid-area: marca_carro;
+
+}
+.modelo_carro{
+    grid-area: modelo_carro;
+}
+.precio_carro{
+    grid-area: precio_carro;
+}
+

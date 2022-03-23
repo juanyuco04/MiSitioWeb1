@@ -3,7 +3,7 @@ h1 {
 }
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    
     grid-template: "item-grid-2   item-grid-2   item-grid-2" 100px
                    "item-grid-3   item-grid-4   item-grid-5" 250px
                    "item-grid-3   item-grid-4   item-grid-5" 250px
