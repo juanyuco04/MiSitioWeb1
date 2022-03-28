@@ -10,11 +10,11 @@ class Automovil {
     }
 }
 
-let auto = new Automovil("Ferrari", " 488 GTB",    "987000000", "img/ferrari.jpg");
-let auto2 = new Automovil("Ford",   " F-150",      "253000000", "img/Ford_F-150.jpg");
-let auto3 = new Automovil("Ford",   " Fusion 2.0", "156000000", "img/Fusion 2.0.jpg");
-let auto4 = new Automovil("Ford",   " scape",      "120000000", "img/Ford Scape.jpg");
-let auto5 = new Automovil("Ford",   " Explore",    "187000000", "img/Ford Explore.jpg");
+let auto = new Automovil("Ferrari", " 488 GTB",    "$ 987.000.000", "img/ferrari.jpg");
+let auto2 = new Automovil("Ford",   " F-150",      "$ 253.000.000", "img/Ford_F-150.jpg");
+let auto3 = new Automovil("Ford",   " Fusion 2.0", "$ 156.000.000", "img/Fusion 2.0.jpg");
+let auto4 = new Automovil("Ford",   " scape",      "$ 120.000.000", "img/Ford Scape.jpg");
+let auto5 = new Automovil("Ford",   " Explore",    "$ 187.000.000", "img/Ford Explore.jpg");
 
 /*   contenedorPrincipal.setAttribute("id", "contentCarro")
 
@@ -95,7 +95,7 @@ window.addEventListener("keydown", function(event){
              mostrarVeiculo(auto2);
              mostrarVeiculo(auto3);
              mostrarVeiculo(auto4);
-             alert("hola")
+             /* alert("hola") */
         }
         else if (busqueda == "Ferrari"){
             mostrarVeiculo(auto);

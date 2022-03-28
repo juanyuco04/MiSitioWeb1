@@ -51,33 +51,44 @@ input {
 .content_producto{
     
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:  "                          imagen_carro"      100px
-                          "marca_carro  modelo_carro imagen_carro  "    50px
-                          "precio_carro precio_carro iamgen_carro  "    30px 
-                          "                          imagen_carro "   100px /
-                            500px            1fr           1fr;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template:       "  imagen_carro       marca_carro"       50px
+                         "  imagen_carro       modelo_carro"      50px
+                         "  imagen_carro       precio_carro"      100px 
+                         "  imagen_carro       empty"             auto /
+                            1fr                 1fr;
 
     margin:  30px ;         
     border-bottom: 1px solid ;       
 }
 .imagen_carro {
-    display: grid;
+/*     display: grid; */
     grid-area: imagen_carro;
     background-size: cover;
-    width: 400px;
+    width: 100%;
+    height: 220px;
 
     
     
 }
 .marca_carro {
     grid-area: marca_carro;
+    font-size: 30px;
+    margin-left: 10%;
 
 }
 .modelo_carro{
     grid-area: modelo_carro;
+    font-size: 25px;
+    margin-left: 10%;
+    
 }
 .precio_carro{
     grid-area: precio_carro;
+    margin-left: 10%;
+    font-size: 30px;
+}
+.inputs {
+    left: 15px;
 }
 
