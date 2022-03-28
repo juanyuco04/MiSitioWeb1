@@ -5,9 +5,11 @@ function  crearTabla () {
     nodoTabla = document.createElement("table");
     let contenedor = document.getElementById("tabla_js");
     contenedor.appendChild(nodoTabla);
+    contenedor.setAttribute("class", "tabla_principal")
 
     let filaPrincipal = document.createElement("tr");
     nodoTabla.appendChild(filaPrincipal);
+    filaPrincipal.setAttribute("class", "fila_encabezado")
 
     let filaHeadign = document.createElement("th");
     filaPrincipal.appendChild(filaHeadign);
@@ -99,9 +101,20 @@ function limpiarFormulario(){
     let limpierStock = document.getElementById("Stock").value = ""
     document.getElementById("Stock").innerHTML = limpierStock
 
-    alert("hola")
 
-    
+}
 
+function evaluarInput(){
+    let evaluarCodigo = document.getElementById("codigo").value 
+    let evaluarDescripcion = document.getElementById("descripcion").value
+    let evaluarValor = document.getElementById("valorUnitario").value
+    let evaluarStock = document.getElementById("Stock").value
+
+    if( evaluarCodigo == "" || evaluarDescripcion == ""  || evaluarValor == "" || evaluarStock == ""){ 
+        
+        alert("ingrese el valor requerido")
+    }else {
+        cargarProducto()  
+    }
 }
 
