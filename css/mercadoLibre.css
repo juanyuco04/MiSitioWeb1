@@ -87,7 +87,7 @@ input {
 .precio_carro{
     grid-area: precio_carro;
     margin-left: 10%;
-    font-size: 25px;
+    font-size: 23px;
 }
 .inputs {
     padding-left: 15px;
