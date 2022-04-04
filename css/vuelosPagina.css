@@ -1,0 +1,25 @@
+.content{ 
+    background: #6633cc;
+    display: grid;
+    grid-template: "contentLogo    basio    basio   basio    contentMenu"  auto /
+                      1fr           1fr      1fr     1fr       60px ;
+} 
+ 
+.contentLogo {
+    grid-area: contentLogo;
+}
+
+.basio {
+    grid-area: basio;
+}
+
+.contentMenu{
+    grid-area: contentMenu;
+    margin: auto;
+}
+
+.imagenLogo{
+    background-size: cover;
+    width: 90%;
+    margin: auto;
+}
