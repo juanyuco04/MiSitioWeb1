@@ -23,3 +23,149 @@
     width: 90%;
     margin: auto;
 }
+.mainContent{
+    /* background: rgb(10, 10, 10); */
+    display: flex;
+    flex-direction: column-reverse;
+    /* flex-wrap: wrap; */
+}
+.codigoContent{
+    /* background: #e900a3; */
+    display: flex;
+ /*    justify-content: center; */
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px 20px 10px 20px ;
+    border-style: ridge;
+   /*  order: 1; */
+   /*  flex-basis: 100%; */
+}
+
+ .mainContent2{
+    /* background: red; */ 
+    display: flex;
+    flex-wrap: wrap;
+    border-style: ridge;
+    justify-content: center;
+    margin: auto 17px 17px 17px ;
+    
+    /* order: 2; */
+
+}
+
+.inicioContent{
+    display: flex;
+    /* background: yellow; */
+    /* flex-basis: 20%; */
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    border-right-style: ridge;
+}
+.descripcionContent{
+    /* background: green; */
+    /* flex-basis: 60%; */
+    flex-grow: 5;
+    display: flex;
+    flex-direction: row;
+
+}
+.fechaHoraInicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background: #e900a3; */
+    padding: 10px;
+  /*   height: 200px;
+    width: 200px; */
+    order: 1;
+    flex-grow: 2.5;
+}
+.fechaHorafinal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #6633cc; */
+    flex-direction: column;
+    padding: 10px;
+   /*  height: 200px;
+    width: 200px; */
+    order: 3;
+    flex-grow: 2.5;
+
+}
+.duracionVuelo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background: yellowgreen; */
+    /* height: 200px;
+    width: 200px; */
+    order: 2;
+    flex-grow: 1;
+
+}
+.imagenVuelos{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 15px;
+    font-size: 3px;
+    background: cover;
+}
+.destinoContent{
+    display: flex;
+    /* background: burlywood; */
+    /* flex-basis: 20%; */
+    flex-grow: 1;
+    border-left-style: ridge;
+    justify-content: center;
+    align-items: center;
+}
+
+.horaSalidadLlegada{
+    color: #6633cc;
+    font-size: 27px;
+    margin-top: 0;
+    padding-top: 0;
+}
+.salidadLegadaFecha{
+    color: black;
+    font-size: 13px;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+}
+.precioVuelo{
+    color: #6633cc;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.codigoVuelo{
+    color: black;
+    margin-right: 10px;
+    font-size: 18px;
+    
+}
+.duracionVuelo{
+    color: black;
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 760px) {
+    .horaSalidadLlegada{
+        color: #6633cc;
+        font-size: 17px;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .duracionVuelo{
+        color: black;
+        margin-top: 0;
+        padding-top: 0;
+        font-size: 12px;
+    }
+}
