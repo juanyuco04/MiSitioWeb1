@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+  /*   justify-content: space-between; */
+    /* flex-flow: row; */
+    justify-content: space-between;
+    height: 20%;
+    /* border-bottom: 4px  solid gray; */
+    flex-basis: 80%;
+    background: rgb(82, 133, 245); 
+   
+
+}
+.contenedorUno{
+    display: flex;
+    flex-basis: 80%;
+    flex-direction: column;
+}
+.contendorArriba{
+    display: flex;
+    justify-content: flex-end;
+    justify-items: center;
+    /* border-bottom: 1px solid black; */
+}
+.contendorAbajo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+body {
+    overflow: hidden;
+}
+.div-logo {
+    display: flex;
+    flex-basis: 25%;  
+    justify-content: center;
+    flex-direction: column;
+}
+.logoBasio {
+    display: none;
+}
+.contenedorBasio {
+    display: flex;
+    flex-basis: 30%;
+}
+.logo {
+    /* background-size: 4em; */ 
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    padding: 5px;
+}
+.menu3 {
+    /*  display: inline-block; */
+     /* background: red; */
+     display: flex;
+     align-items: center;
+     justify-content: right;
+     border-top: 1px solid black;
+    /*  flex-basis: 35%; */
+     /* justify-content: flex-end; */
+ }
+ .uls {
+     flex-basis: 45%;
+     display: flex;
+     justify-content: space-around;
+     padding: 5px;
+     margin: 0;
+ }
+.lis {
+   /*  text-decoration: none;
+    justify-content: center; */
+    display: inline-block; 
+    list-style: none;
+    margin-right: 10px;
+    
+}
+/* a{
+    text-decoration: none;
+    padding: 7px;
+    color: black;
+    font-size: 17px;
+} */
+.as {
+    text-decoration: none;
+    padding: 7px;
+    color: black;
+    font-size: 17px;
+}
+.ass {
+    text-decoration: none;
+    padding: 7px;
+    color: black;
+    font-size: 17px;
+}
+.as:hover {
+    color: rgb(12, 12, 12);
+    font-size: 19px;
+}
+
+.contentMenu{
+    display: flex;
+    align-items: center ;
+    width: 40px;
+    padding: 10px;
+    margin-right: 20px;
+    /* margin: 20px; */ 
+}
+.contentInput {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+    align-items: center;   
+   /*  justify-content: flex-end; */
+}
+.inputBusqueda{
+    width: 100%;
+    padding-left: 10px;
+}
+.fa-magnifying-glass{
+    cursor: pointer;
+}
+.busqueda {
+    display: flex;
+    align-items: center;
+}
+.fa-solid {
+    padding: 10px;
+    /* margin: 10 0px; */
+}
+.fa-bars {
+    font-size: 25px;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.2s 0.1s;
+    flex-basis: 15%;
+}
+.fa-bars:hover{
+      transform: rotate(360deg);
+}
+.bot{
+    position: absolute;
+    visibility: hidden;
+    right: 20px;
+    bottom: 40px;
+    height: 0px;
+    width: 0px;
+}
+.bot-visibleBot{
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+    transition: width 1s, height 1s;
+    transition-timing-function: ease-out;
+    transform-origin: right bottom;
+    height: 350px;
+    width: 325px;
+}
+
+.contenido{
+    display: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.contenido-mostrar{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.encabezado{
+    display: flex;
+    background: rgb(82, 133, 245); 
+    height: 58px;
+    padding: 6px;
+}
+.imagenDiv{
+    display: flex;
+    flex-basis: 90%;
+    justify-content: left;
+
+}
+.salir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 0.5px solid black;
+}
+.fa-xmark-large{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.imagen{
+    background: cover;
+    background-repeat: no-repeat center center;
+    background-size: 12px;
+    width: 50px;
+    height: 50px;
+    padding: 6px;
+    border-radius: 50%;
+}
+ .mensajes{
+     display: flex;
+    /*  flex-grow: 3; */
+     height: 262px;  
+     background-color: rgb(252, 249, 245); 
+     flex-direction: column;
+     justify-content: space-around;
+ }
+.mensajeBot{
+    display: flex;
+    flex-basis: 30%;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.mensajeBotc{
+    background: rgb(130, 169, 253);
+    flex-basis: 70%;
+    border-radius: 30%; 
+    padding: 10px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.imagenBot{
+    padding: 6px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 0.5px solid rgb(172, 172, 173);
+}
+.mesajeNoBot{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 95%;
+}
+.Nombre {
+    display: flex;
+    /* flex-basis: 25%; */
+    padding: 6px;
+    width: 60%;
+    height: 25px;
+    outline-color: blue;
+    margin: 6px;
+}
+.Apellido{
+    display: flex;
+    /* flex-basis: 25%; */
+    width: 60%;
+    height: 25px;
+    padding: 6px;
+    outline-color: blue;
+    margin: 6px;
+}
+.Inquietud{
+    display: flex;
+    /* flex-basis: 50%; */
+    padding: 6px;
+    width: 60%;
+    height: 50px;
+    outline-color: blue;
+    margin: 6px;
+}
+.piePagina{
+    height: 55px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-basis: 100%;
+    background-color: rgb(216, 215, 215);
+}
+.inputEnviar{
+    display: flex;
+    flex-basis: 90%;
+    padding: 6px;
+    outline-color: blue;
+}
+.buttom {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background: rgb(82, 133, 245);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.buttom-verButtom {
+    position: absolute;
+    visibility: hidden;
+    right: 10px;
+    bottom: 10px;
+    background: rgb(82, 133, 245);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 760px) {
+    .logoBasio{
+        display: flex;
+        height: 90%;
+    }
+    .logo {
+        width: 70px;
+        height: 70px;
+        margin: auto;
+    }
+    .contenedorBasio {
+        display: none;
+    }
+    .contentInput{
+        display: none;
+        opacity: 0;
+    }
+    .contentInput.buscar{
+        display: flex;
+        flex-basis: 60%;
+        animation: mostrarmenu 0.2s ease-in-out both;
+    }
+    .contenedorAbajo{
+        display: none;
+        flex-basis: 100%;
+        opacity: 0;
+    }
+
+    @keyframes mostrarmenu {
+        from{opacity: 0;}
+        to{opacity: 1;}
+    }
+
+    .contenedorAbajo.visible{
+        display: flex;
+        animation: mostrarmenu 0.2s ease-in-out both;
+    }
+    .menu3 {
+         display: flex;
+         flex-basis: 100%;
+         background: rgb(6, 80, 241); 
+     }
+     .uls {
+         flex-basis: 100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         padding: 5px;
+         margin: 0;
+     }
+    .lis {
+        /* justify-content: center;
+        align-items: center; */
+        text-align: center;
+        padding: 30px;
+        list-style: none;
+        margin-right: 10px;
+        width: 100%;
+        border-bottom-style: ridge;
+    } 
+    .ass {
+        width: 100%;
+    }
+    .contenedorArriba {
+        justify-content: center;
+        align-items: flex-end;
+    }
+}
+

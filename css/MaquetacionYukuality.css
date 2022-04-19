@@ -48,27 +48,35 @@ header {
      width: 100%;
      display: flex;
      justify-content: space-between;
+     padding: 5px;
+     margin: 0;
  }
 .lis {
    /*  text-decoration: none;
     justify-content: center; */
     display: inline-block; 
-    margin: auto;
     list-style: none;
+    
 }
-a{
+/* a{
     text-decoration: none;
     padding: 7px;
     color: black;
     font-size: 17px;
-}
+} */
 .as {
     text-decoration: none;
     padding: 7px;
     color: black;
     font-size: 17px;
 }
-a:hover {
+.ass {
+    text-decoration: none;
+    padding: 7px;
+    color: black;
+    font-size: 17px;
+}
+.as:hover {
     color: rgb(12, 12, 12);
     font-size: 19px;
 }
@@ -85,8 +93,14 @@ a:hover {
 .contentInput {
     display: flex;
     flex-basis: 35%;
+    justify-content: center;
+    align-items: center;
     
    /*  justify-content: flex-end; */
+}
+.inputBusqueda{
+    width: 100%;
+    padding-left: 10px;
 }
 .busqueda {
     display: flex;
@@ -120,4 +134,5 @@ a:hover {
    right: 10px;
    top: 10px;
 }
+
 
