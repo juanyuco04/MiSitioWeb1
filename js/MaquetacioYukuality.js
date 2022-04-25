@@ -8,6 +8,8 @@ let mostrarBot = document.getElementById('bot');
 const ocultarButton = document.getElementById('buttom');
 let salirBot = document.getElementById('salir');
 let sendButtom = document.getElementById('enviar');
+let carroIcon = document.querySelector('.carrito');
+
 
 
 buttomMenu.addEventListener('click', () => {
@@ -16,6 +18,8 @@ buttomMenu.addEventListener('click', () => {
 
 buttomBusqueda.addEventListener('click', () => {
     busqueda.classList.toggle('buscar');
+    carroIcon.classList.toggle('dos')
+    buttomMenu.classList.toggle('ocultar')
 });
 
 ocultarButton.addEventListener('click', buscar );
